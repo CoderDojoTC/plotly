@@ -1,0 +1,36 @@
+site_name: Charts with Plotly
+nav:
+  - Introduction: index.md
+  - Getting Started: getting-started.md
+  - Lessons:
+    - lesson 1: 01-lesson.md
+    - lesson 2: 02-lesson.md
+  - Glossary: glossary.md
+  - References: references.md
+  - Contact: contact.md
+
+site_description: 'Resources for teaching Plotly to CoderDojo Twin Cities students.  All content licensed Creative Commons ShareAlike Attribution Noncommercial'
+site_author: 'Dan McCreary'
+repo_name: 'GitHub Repo'
+repo_url: 'https://github.com/CoderDojoTC/micropython'
+
+# CoderDojo Standards from here down
+edit_uri: 'blob/master/docs'
+theme:
+  # should be name: material
+  name: material
+  logo: img/coderdojo-logo.png
+  palette:
+    primary: '#642580'
+    accent: '#41BAC1'
+  custom_dir: 'theme'
+  include_sidebar: true
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.details
+  - pymdownx.superfences

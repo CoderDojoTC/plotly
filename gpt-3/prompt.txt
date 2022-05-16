@@ -1,0 +1,10 @@
+Engine: text-davinci-002
+Temperature: 0
+Maximum Length: 200
+
+
+Create an outline for a class on creating charts with Plotly in python for a junior-high school student:
+
+1. What is Plotly
+2. Getting Started
+3.
