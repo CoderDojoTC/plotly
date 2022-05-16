@@ -1,9 +1,10 @@
 site_name: Charts with Plotly
 nav:
   - Introduction: index.md
-  - Getting Started: getting-started.md
+  
   - Lessons:
-    - lesson 1: 01-lesson.md
+    - WHat is Plotly: lessons/01-what-is-plotly.md
+    - Getting Started: lessons/02-getting-started.md
     - lesson 2: 02-lesson.md
   - Glossary: glossary.md
   - References: references.md

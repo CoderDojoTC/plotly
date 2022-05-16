@@ -1,6 +1,6 @@
 # Getting Started with Plotly
 
-This lesson will show you how to install the Plotly Python libraries.  This lesson assumes you have Python 3 already running on your computer.
+This lesson will show you how to install the Plotly Python libraries.  This lesson assumes you have Python 3 already running on your computer.  This is probably the lest fun and must frustrating part of this class.  But, once you have it working you can begin the real fun!
 
 ## Installing Plotly Libraries
 
