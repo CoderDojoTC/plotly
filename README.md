@@ -1,1 +1,1 @@
-# charts-with-python
+# Charting with Python ant Plotly
