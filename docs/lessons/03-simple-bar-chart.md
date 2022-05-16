@@ -31,7 +31,7 @@ fig.show()
 
 This will open a web browser and display the following plot:
 
-![](img/plot-canada-population.png)
+![Plot of Canada Population Over Time](../img/plot-canada-population.png)
 
 Other than the first and last lines, the plotting program just needs two lines.
 
