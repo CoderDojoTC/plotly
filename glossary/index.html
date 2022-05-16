@@ -18,7 +18,7 @@
     
     
       
-        <title>A Simple Bar Chart - Charts with Plotly</title>
+        <title>Glossary - Charts with Plotly</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#a-simple-bar-chart" class="md-skip">
+        <a href="#glossary-of-terms-for-plotly-class" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              A Simple Bar Chart
+              Glossary
             
           </span>
         </div>
@@ -285,11 +285,70 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../glossary/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Glossary
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Glossary
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bar-chart" class="md-nav__link">
+    Bar Chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pie-chart" class="md-nav__link">
+    Pie Chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotly" class="md-nav__link">
+    Plotly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotly-express" class="md-nav__link">
+    Plotly Express
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -351,15 +410,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plotly-express" class="md-nav__link">
-    Plotly Express
+  <a href="#bar-chart" class="md-nav__link">
+    Bar Chart
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercises" class="md-nav__link">
-    Exercises
+  <a href="#pie-chart" class="md-nav__link">
+    Pie Chart
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotly" class="md-nav__link">
+    Plotly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotly-express" class="md-nav__link">
+    Plotly Express
   </a>
   
 </li>
@@ -376,43 +449,16 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/micropython/blob/master/docs/03-simple-bar-chart.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/micropython/blob/master/docs/glossary.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="a-simple-bar-chart">A Simple Bar Chart</h1>
-<h2 id="plotly-express">Plotly Express</h2>
-<p>Plotly Express is a small subset of the extensive Plotly libraries that are idea for beginners.</p>
-<p>We will begin all our examples with this line:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-</code></pre></div>
-</td></tr></table>
-<p>This line will load the ploty express library and rename it as "px".</p>
-<p>We will end with the following:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
-<p>This will take our data and render it to the screen.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-<span class="n">data_canada</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">gapminder</span><span class="p">()</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;country == &#39;Canada&#39;&quot;</span><span class="p">)</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">data_canada</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;pop&#39;</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
-<p>This will open a web browser and display the following plot:</p>
-<p><img alt="" src="../img/plot-canada-population.png" /></p>
-<p>Other than the first and last lines, the plotting program just needs two lines.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">data_canada</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">gapminder</span><span class="p">()</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;country == &#39;Canada&#39;&quot;</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
-<p>This gets some sample data from a dataset called "Gap Minder" and runs a query for the country of Canada.</p>
-<h2 id="exercises">Exercises</h2>
-<p>On line 2, try to change the "country" variable to be another country such as "india" or "ireland".</p>
-<p>On line 3 change X-Axis label to be "Time" and Y-Axis label to be "Population".</p>
+                <h1 id="glossary-of-terms-for-plotly-class">Glossary of Terms for Plotly Class</h1>
+<h4 id="bar-chart">Bar Chart</h4>
+<h4 id="pie-chart">Pie Chart</h4>
+<h4 id="plotly">Plotly</h4>
+<h4 id="plotly-express">Plotly Express</h4>
                 
               
               
@@ -427,6 +473,41 @@
       
         
   <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../lessons/02-getting-started/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Getting Started
+                </span>
+              </div>
+            </a>
+          
+          
+            <a href="../contact/" title="Contact" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  Contact
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
